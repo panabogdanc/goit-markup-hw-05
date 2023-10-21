@@ -125,6 +125,21 @@ header ul {
 
 .actual {
   color: var(--standard-highlight-color);
+  /* border-bottom: 4px solid var(--standard-highlight-color);
+  border-radius: 2px;
+  padding-bottom: 21.1px;
+  */
+}
+
+.underline {
+  border-top: 2px solid var(--standard-highlight-color);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom: 2px solid var(--standard-highlight-color);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: relative;
+  top: 25px;
 }
 
 .footer-container {
@@ -148,7 +163,6 @@ header ul {
 }
 
 .footer-style {
-  /* height: 251px; */
   display: flex;
   background-color: var(--standard-bg-color);
   color: #fff;
@@ -200,6 +214,12 @@ header ul {
 
 .find-us-list svg {
   width: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Styles for index.html */
@@ -300,6 +320,20 @@ header ul {
   padding: 0 0 94px 0;
   margin: 0;
   list-style-type: none;
+}
+
+.what-we-do-picture-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  bottom: 70px;
+  margin-bottom: -70px;
 }
 
 .what-we-do-title {
@@ -506,6 +540,9 @@ header ul {
   margin: 0;
 }
 
+.marelediv {
+}
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -518,10 +555,36 @@ header ul {
   list-style-type: none;
 }
 
+.cards-overlap {
+  padding: 0 24px;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  position: absolute;
+  transition-property: visibility, transform;
+  transition-duration: 250ms;
+}
+
+.cards-container-img {
+  position: relative;
+  overflow: hidden;
+}
+
 .cards-container li {
   border: 1px solid #eeeeee;
 }
 
 .cards-container > li:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container > li:hover .cards-container-img div {
+  visibility: visible;
+  transform: translateY(-300px);
 }
