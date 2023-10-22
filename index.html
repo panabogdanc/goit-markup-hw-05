@@ -68,12 +68,19 @@
     </header>
 
     <main>
+      <!-- Request our service modal -->
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+          <button class="modal-close-btn" data-modal-close>&times;</button>
+        </div>
+      </div>
+
       <section class="first-section">
         <div class="first-section-container">
           <h1 class="first-section-title">
             EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
           </h1>
-          <button class="first-section-button" type="button">
+          <button data-modal-open class="first-section-button" type="button">
             Request our service
           </button>
         </div>
