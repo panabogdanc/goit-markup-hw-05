@@ -96,6 +96,8 @@ header ul {
   font-size: 14px;
   font-weight: 500;
   color: #212121;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-method {
@@ -107,11 +109,15 @@ header ul {
   font-weight: 500;
   color: var(--standard-gray);
   margin-right: 40px;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-icon {
   fill: #afb1b8;
   margin-right: 10px;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link-address:hover,
@@ -204,6 +210,8 @@ header ul {
   display: flex;
   justify-content: center;
   fill: #fff;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .find-us-list li:hover,
@@ -427,12 +435,14 @@ header ul {
   height: 40px;
   list-style-type: none;
   fill: #afb1b8;
+  border-radius: 50%;
+  transition: fill 250ms, background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-media li:hover,
 .team-social-media li:focus {
   background-color: var(--standard-highlight-color);
-  border-radius: 50%;
   fill: #fff;
 }
 
@@ -470,6 +480,8 @@ header ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-list li:hover,
@@ -490,6 +502,8 @@ header ul {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px 6px 22px;
+  transition: background-color 250ms, color 250ms, box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portofolio-button:hover,
